@@ -1,0 +1,1 @@
+{"coco/bbox_mAP": 0.708, "coco/bbox_mAP_50": 0.798, "coco/bbox_mAP_75": 0.798, "coco/bbox_mAP_s": 0.794, "coco/bbox_mAP_m": 0.714, "coco/bbox_mAP_l": 0.672, "coco/segm_mAP": 0.705, "coco/segm_mAP_50": 0.798, "coco/segm_mAP_75": 0.793, "coco/segm_mAP_s": 0.678, "coco/segm_mAP_m": 0.715, "coco/segm_mAP_l": 0.754, "data_time": 0.021089137944960056, "time": 0.2466562887779752}
