@@ -15,7 +15,7 @@ classes = (
 num_classes = len(classes)
 
 # Raíz de tu dataset COCO ya convertido
-data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset/'
+data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset/'
 
 # =========================================================
 # MODEL

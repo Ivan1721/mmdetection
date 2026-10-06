@@ -1,7 +1,7 @@
 
 _base_ = ['C:/workspace/mmdetection/configs/mask2former/mask2former_fruits_r50.py']
 
-data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset/'
+data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset/'
 
 val_dataloader = dict(
     batch_size=1,

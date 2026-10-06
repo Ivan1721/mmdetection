@@ -52,7 +52,7 @@ data_preprocessor = dict(
         57.375,
     ],
     type='DetDataPreprocessor')
-data_root = 'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset'
+data_root = 'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset'
 dataset_type = 'CocoDataset'
 default_hooks = dict(
     checkpoint=dict(
@@ -296,7 +296,7 @@ test_dataloader = dict(
         backend_args=None,
         data_prefix=dict(img='', seg='annotations/panoptic_val2017/'),
         data_root=
-        'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset',
+        'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset',
         metainfo=dict(
             classes=(
                 'apple_green',
@@ -331,7 +331,7 @@ test_dataloader = dict(
     sampler=dict(shuffle=False, type='DefaultSampler'))
 test_evaluator = dict(
     ann_file=
-    'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset/annotations/instances_val_75.json',
+    'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset/annotations/instances_val_75.json',
     backend_args=None,
     format_only=False,
     metric=[
@@ -365,7 +365,7 @@ train_dataloader = dict(
         backend_args=None,
         data_prefix=dict(img='', seg='annotations/panoptic_train2017/'),
         data_root=
-        'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset/',
+        'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset/',
         filter_cfg=dict(filter_empty_gt=True, min_size=1),
         metainfo=dict(
             classes=(
@@ -456,7 +456,7 @@ val_dataloader = dict(
         backend_args=None,
         data_prefix=dict(img='', seg='annotations/panoptic_val2017/'),
         data_root=
-        'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset',
+        'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset',
         metainfo=dict(
             classes=(
                 'apple_green',
@@ -491,7 +491,7 @@ val_dataloader = dict(
     sampler=dict(shuffle=False, type='DefaultSampler'))
 val_evaluator = dict(
     ann_file=
-    'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset/annotations/instances_val_75.json',
+    'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset/annotations/instances_val_75.json',
     backend_args=None,
     format_only=False,
     metric=[

@@ -17,7 +17,7 @@ classes = (
 num_things_classes = len(classes)
 num_stuff_classes = 0
 
-data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset/'
+data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset/'
 
 # =========================================================
 # MODEL
@@ -222,7 +222,7 @@ val_dataloader = dict(
     dataset=dict(
         type='CocoDataset',
         metainfo=dict(classes=classes),
-        data_root=r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset',
+        data_root=r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset',
         ann_file='annotations/instances_val_25.json',
         data_prefix=dict(img=''),
         test_mode=True,
@@ -233,7 +233,7 @@ test_dataloader = val_dataloader
 
 val_evaluator = dict(
     type='CocoMetric',
-    ann_file=r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset/annotations/instances_val_25.json',
+    ann_file=r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset/annotations/instances_val_25.json',
     metric=['bbox', 'segm'],
     format_only=False
 )

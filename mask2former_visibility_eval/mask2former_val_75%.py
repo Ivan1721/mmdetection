@@ -17,7 +17,7 @@ classes = (
 num_things_classes = len(classes)
 num_stuff_classes = 0
 
-data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/Tesis/vision/Transformer/Manzana/coco_dataset/'
+data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset/'
 
 # =========================================================
 # MODEL
@@ -216,8 +216,8 @@ work_dir = './work_dirs/mask2former_fruits_r50_50e_v1'
 val_dataloader = dict(
     batch_size=1,
     dataset=dict(
-        ann_file='C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\Tesis\vision\Transformer\Manzana\coco_dataset/annotations/instances_val_75%.json',
-        data_root='C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\Tesis\vision\Transformer\Manzana\coco_dataset',
+        ann_file='C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\vision\Transformer\Manzana\coco_dataset/annotations/instances_val_75%.json',
+        data_root='C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\vision\Transformer\Manzana\coco_dataset',
         data_prefix=dict(img=''),
         type='CocoDataset',
         test_mode=True
@@ -227,7 +227,7 @@ val_dataloader = dict(
 test_dataloader = val_dataloader
 
 val_evaluator = dict(
-    ann_file='C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\Tesis\vision\Transformer\Manzana\coco_dataset/annotations/instances_val_75%.json',
+    ann_file='C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\vision\Transformer\Manzana\coco_dataset/annotations/instances_val_75%.json',
     metric=['bbox', 'segm']
 )
 

@@ -14,7 +14,7 @@ CONFIG_FILE = MMDET_ROOT / "configs/mask2former/mask2former_fruits_r50.py"
 CHECKPOINT_DIR = MMDET_ROOT / "work_dirs/mask2former_fruits_r50_50e_v2_epoch_ckpts"
 
 DATA_ROOT = Path(
-    r"C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\Tesis\vision\Transformer\Manzana\coco_dataset"
+    r"C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\vision\Transformer\Manzana\coco_dataset"
 )
 
 VISIBILITY_LEVELS = ["25", "50", "75", "100"]
