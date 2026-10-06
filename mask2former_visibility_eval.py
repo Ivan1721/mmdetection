@@ -7,15 +7,14 @@ from pathlib import Path
 # CONFIG
 # =========================================================
 
-MMDET_ROOT = Path(r"C:\workspace\mmdetection")
+MMDET_ROOT = Path(__file__).resolve().parent
 
 CONFIG_FILE = MMDET_ROOT / "configs/mask2former/mask2former_fruits_r50.py"
 
 CHECKPOINT_DIR = MMDET_ROOT / "work_dirs/mask2former_fruits_r50_50e_v2_epoch_ckpts"
 
-DATA_ROOT = Path(
-    r"C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\vision\Transformer\Manzana\coco_dataset"
-)
+# repos/mmdetection/<this file> -> repos/dataset/coco
+DATA_ROOT = (MMDET_ROOT / ".." / "dataset" / "coco").resolve()
 
 VISIBILITY_LEVELS = ["25", "50", "75", "100"]
 

@@ -22,7 +22,11 @@ classes = (
     'orange',
 )
 
-data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset'
+import os as _os
+# relative to this file: configs/mask2former/<this file> -> repos/dataset/coco
+data_root = _os.path.normpath(_os.path.join(
+    _os.path.dirname(_os.path.abspath(__file__)), '..', '..', '..', 'dataset', 'coco'
+))
 
 ann_file = f'annotations/instances_val_{VIS_LEVEL}.json'
 

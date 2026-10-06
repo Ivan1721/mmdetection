@@ -14,8 +14,11 @@ classes = (
 )
 num_classes = len(classes)
 
-# Raíz de tu dataset COCO ya convertido
-data_root = r'C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/1.Universidad/PhdDISA/vision/Transformer/Manzana/coco_dataset/'
+# Raíz de tu dataset COCO ya convertido (relativa: configs/mask_rcnn/<este archivo> -> repos/dataset/coco)
+import os as _os
+data_root = _os.path.normpath(_os.path.join(
+    _os.path.dirname(_os.path.abspath(__file__)), '..', '..', '..', 'dataset', 'coco'
+)) + _os.sep
 
 # =========================================================
 # MODEL
