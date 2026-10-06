@@ -1,6 +1,6 @@
 _base_ = '../detr/detr_r50_8xb2-150e_coco.py'
 
-data_root = r'C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\Tesis\vision\dataset_coco\\'
+data_root = r'C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\vision\dataset_coco\\'
 
 metainfo = {
     'classes': ('apple_green', 'apple_red'),

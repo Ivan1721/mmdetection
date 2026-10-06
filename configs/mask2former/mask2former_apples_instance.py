@@ -9,7 +9,7 @@ model = dict(
         bbox_head=dict(num_classes=2), mask_head=dict(num_classes=2)))
 
 # Modify dataset related settings
-data_root = r'C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\Tesis\vision\dataset_coco\\'  # <-- AJUSTA
+data_root = r'C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\vision\dataset_coco\\'  # <-- AJUSTA
 metainfo = {
     'classes': ('apple_green', 'apple_red'),
     'palette': [
