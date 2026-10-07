@@ -18,11 +18,12 @@ classes = (
 num_things_classes = len(classes)
 num_stuff_classes = 0
 
-import os as _os
-# relative to this file: configs/mask2former/<this file> -> repos/dataset/coco
-data_root = _os.path.normpath(_os.path.join(
-    _os.path.dirname(_os.path.abspath(__file__)), '..', '..', '..', 'dataset', 'coco'
-)) + _os.sep
+# NOTE: mmengine loads config files via eval(), not as a normal Python
+# module, so __file__ is not defined here - a __file__-relative path
+# cannot be computed from inside a config. This must stay an absolute
+# path; keep it in sync with the dataset/ directory's actual location
+# (a sibling of this repo under C:\Users\garci\repos\).
+data_root = r'C:\Users\garci\repos\dataset\coco' + '\\'
 
 # =========================================================
 # MODEL
