@@ -113,7 +113,17 @@ def main():
 
         result = inference_detector(model, str(img_path))
         instances = result.pred_instances
-        keep = instances.scores.cpu().numpy() >= CONF
+        all_scores = instances.scores.cpu().numpy()
+        # These are single-fruit reference frames (matching the YOLO images,
+        # which each show exactly one detection). Mask2Former sometimes fires
+        # a second, lower-confidence, overlapping detection of a different
+        # class on the same fruit (e.g. "avocado" on top of "pear"), which
+        # would silently paint over the correct mask -- so keep only the
+        # single highest-confidence instance rather than everything >= CONF.
+        if len(all_scores) == 0 or all_scores.max() < CONF:
+            keep = np.zeros(0, dtype=int)
+        else:
+            keep = np.array([int(np.argmax(all_scores))])
         masks = instances.masks[keep].cpu().numpy()  # (N,h,w) bool
         labels = instances.labels[keep].cpu().numpy()
         scores = instances.scores[keep].cpu().numpy()
