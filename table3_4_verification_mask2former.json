@@ -1,0 +1,8 @@
+{
+  "bbox_mAP50_95": 0.618,
+  "bbox_mAP50": 0.746,
+  "segm_mAP50_95": 0.61,
+  "segm_mAP50": 0.745,
+  "params_M": 44.004,
+  "latency_ms_batch1": 93.17616333333281
+}
