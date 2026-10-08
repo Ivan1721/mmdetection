@@ -157,7 +157,10 @@ def main():
                     tx, ty = x1, max(18, y1 - 8)
                     draw_text_with_outline(out, txt, (tx, ty), color)
 
-        out_path = OUT_DIR / f"{fruit}_mask2former.jpeg"
+        # PNG (lossless), matching the *_yolo11/*_yolo26 images -- JPEG
+        # introduces block artifacts and color shift at mask edges that the
+        # other two don't have.
+        out_path = OUT_DIR / f"{fruit}_mask2former.png"
         cv2.imwrite(str(out_path), out)
         print(f"Saved: {out_path}")
 
