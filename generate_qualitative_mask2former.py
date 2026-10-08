@@ -4,8 +4,9 @@ paper/Articulo/ (Figure 4 of sn-articleOK.tex), matching the exact source
 frames already used for the *_train/*_yolo11/*_yolo26 versions of the same
 figure (see Ultralytics/notebooks/Instance_segV1.ipynb).
 
-Run from the mmdetection repo root with the openmmlab conda env:
-    C:\\Users\\garci\\anaconda3\\envs\\openmmlab\\python.exe generate_qualitative_mask2former.py
+Run from the mmdetection repo root with the openmmlab241fix conda env (the
+plain openmmlab env fails with a DLL load error for mmcv extensions):
+    C:\\Users\\garci\\anaconda3\\envs\\openmmlab241fix\\python.exe generate_qualitative_mask2former.py
 """
 
 from pathlib import Path
@@ -48,6 +49,11 @@ def main():
 
     visualizer = VISUALIZERS.build(model.cfg.visualizer)
     visualizer.dataset_meta = model.dataset_meta
+    # Match Ultralytics' default mask overlay transparency (alpha=0.5) so the
+    # qualitative comparison figure isn't visually biased by rendering style;
+    # mmdetection's DetLocalVisualizer otherwise defaults to alpha=0.8 (much
+    # more opaque).
+    visualizer.alpha = 0.5
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
