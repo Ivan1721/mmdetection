@@ -13,8 +13,7 @@ CONFIG_FILE = MMDET_ROOT / "configs/mask2former/mask2former_fruits_r50.py"
 
 CHECKPOINT_DIR = MMDET_ROOT / "work_dirs/mask2former_fruits_r50_50e_v2_epoch_ckpts"
 
-# repos/mmdetection/<this file> -> repos/dataset/coco
-DATA_ROOT = (MMDET_ROOT / ".." / "dataset" / "coco").resolve()
+DATA_ROOT = Path(r"C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\coco")
 
 VISIBILITY_LEVELS = ["25", "50", "75", "100"]
 

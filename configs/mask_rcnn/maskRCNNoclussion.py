@@ -18,8 +18,8 @@ num_classes = len(classes)
 # module, so __file__ is not defined here - a __file__-relative path
 # cannot be computed from inside a config. This must stay an absolute
 # path; keep it in sync with the dataset/ directory's actual location
-# (a sibling of this repo under C:\Users\garci\repos\).
-data_root = r'C:\Users\garci\repos\dataset\coco' + '\\'
+# (now centralized under Bases de Datos, see repos\Ultralytics\CLAUDE.md).
+data_root = r'C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\coco' + '\\'
 
 # =========================================================
 # MODEL

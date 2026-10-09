@@ -3,7 +3,7 @@
 This fork of `open-mmlab/mmdetection` hosts the Mask2Former (and exploratory DETR / Mask-RCNN) side
 of a fruit-occlusion instance-segmentation study. The YOLO11/YOLO26 side, the dataset pipeline, and
 the paper manuscript live in the sibling repo `../Ultralytics`; both repos read the shared dataset at
-`../dataset/` (not tracked by either repo's git). See `../Ultralytics/README.md` and
+`C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\` (not tracked by either repo's git). See `../Ultralytics/README.md` and
 `../Ultralytics/CLAUDE.md` for the project as a whole.
 
 ## What's project-specific here (vs. upstream mmdetection)
@@ -32,7 +32,7 @@ context from it. The project's own additions:
 
 mmengine loads a config file via `eval()` of its compiled code, not as a normal imported module — so
 `__file__` is **not defined** inside a config. `data_root` in the three active configs above is
-therefore a plain absolute path (`C:\Users\garci\repos\dataset\coco`), not computed relative to the
+therefore a plain absolute path (`C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\coco`), not computed relative to the
 config file. If `dataset/` or this repo ever moves again, update those three `data_root` lines by hand
 (and `mask2former_visibility_eval.py`'s `DATA_ROOT`, which *can* use `__file__` since it runs as a
 normal script, not as a loaded config).

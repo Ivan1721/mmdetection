@@ -23,7 +23,7 @@ num_stuff_classes = 0
 # cannot be computed from inside a config. This must stay an absolute
 # path; keep it in sync with the dataset/ directory's actual location
 # (a sibling of this repo under C:\Users\garci\repos\).
-data_root = r'C:\Users\garci\repos\dataset\coco' + '\\'
+data_root = r'C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\coco' + '\\'
 
 # =========================================================
 # MODEL
